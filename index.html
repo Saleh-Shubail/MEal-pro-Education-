@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEAL Pros - الخبراء في الرصد والتقييم والمساءلة والتعلم</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <select id="language">
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+            </select>
+        </div>
+        
+        <div class="technical-notice" id="techNotice">
+            <h3><i class="fas fa-exclamation-triangle"></i> إشعار مهم</h3>
+            <p>بسبب مشاكل تقنية، فإن نظام التسجيل في موقعنا معطل مؤقتًا.</p>
+            <p>نرجو منكم قبول اعتذارنا عن الإزعاج. نحن نعمل على إيجاد حل ونأمل في استئناف العمليات قريبًا.</p>
+            <p>شكرًا لتفهمكم.</p>
+            <p><strong>IMPORTANT NOTICE:</strong> Because of technical issues, our website registration system is temporarily out-of-order.</p>
+            <p>Please accept our apologies for the inconvenience. We are working on a solution and hope to resume operations shortly.</p>
+            <p>Thank you for your understanding.</p>
+            <button onclick="toggleTechNotice()" style="margin-top: 15px; padding: 8px 16px; background: #dc2626; color: white; border: none; border-radius: 5px; cursor: pointer;">إغلاق</button>
+        </div>
+        
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-chart-network"></i>
+                    <h1>MEAL Pros</h1>
+                </div>
+                <p class="tagline">الخبراء في أنظمة الرصد والتقييم والمساءلة والتعلم للمشاريع التنموية والإنسانية</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        <i class="fas fa-concierge-bell"></i> خدماتنا
+                    </a>
+                    <a href="#courses" class="btn btn-secondary">
+                        <i class="fas fa-graduation-cap"></i> الدورات التدريبية
+                    </a>
+                    <a href="#resources" class="btn btn-outline">
+                        <i class="fas fa-book"></i> الموارد والمكتبة
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+        <div class="domain-suggestion">
+            <h2>نقترح عليك اسم النطاق المثالي</h2>
+            <p class="domain-name">MEAL-Pros.com</p>
+            <p>اسم احترافي وسهل التذكر ويعبر بوضوح عن تخصصك في مجال الرصد والتقييم والمساءلة والتعلم</p>
+            <a href="#" class="btn btn-primary">
+                <i class="fas fa-globe"></i> احجز نطاقك الآن
+            </a>
+        </div>
+        
+        <section class="section">
+            <h2 class="section-title">لماذا تختار MEAL Pros؟</h2>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <div>
+                        <h3>تخصص دقيق في MEAL</h3>
+                        <p>نحن متخصصون بالكامل في أنظمة الرصد والتقييم والمساءلة والتعلم، مما يضمن لك جودة عالية في الخدمات المقدمة</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div>
+                        <h3>خبراء معتمدون دوليًا</h3>
+                        <p>فريقنا يتكون من خبراء حاصلين على شهادات MEAL-DPro والشهادات الدولية المعتمدة في هذا المجال</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <div>
+                        <h3>دعم فني مستمر</h3>
+                        <p>نقدم لك الدعم المستمر من بداية رحلتك حتى إتقانك الكامل لمجال MEAL وتحقيق أهدافك المهنية</p>
+                    </div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <div>
+                        <h3>خدمات عالمية</h3>
+                        <p>نقدم خدماتنا لعملائنا من مختلف أنحاء العالم، مع فهم عميق للسياقات الثقافية والبيئية المختلفة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services" class="section">
+            <h2 class="section-title">خدماتنا المتخصصة</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="service-title">دورات تدريبية في MEAL</h3>
+                    <p class="service-desc">برامج تدريبية متكاملة من المستوى المبتدئ إلى الاحترافي، مع شهادات معتمدة تفتح لك أبواب التوظيف العالمي</p>
+                    <p class="service-price">بدءًا من $99</p>
+                    <button class="btn btn-outline">اطلب الخدمة</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3 class="service-title">كتابة تقارير التقييم</h3>
+                    <p class="service-desc">إعداد تقارير تقييم احترافية تلبي أعلى المعايير الدولية وتتوافق مع متطلبات الجهات المانحة</p>
+                    <p class="service-price">بدءًا من $299</p>
+                    <button class="btn btn-outline">اطلب الخدمة</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-poll"></i>
+                    </div>
+                    <h3 class="service-title">إجراء المسوحات الميدانية</h3>
+                    <p class="service-desc">تصميم وتنفيذ وتحليل المسوحات والاستبيانات الميدانية بدقة عالية وفق أفضل الممارسات الدولية</p>
+                    <p class="service-price">بدءًا من $499</p>
+                    <button class="btn btn-outline">اطلب الخدمة</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 class="service-title">التحليلات الإحصائية</h3>
+                    <p class="service-desc">تحليل بيانات المشاريع باستخدام أحدث الأساليب الإحصائية وأدوات التحليل المتقدمة لاستخلاص رؤى قابلة للتنفيذ</p>
+                    <p class="service-price">بدءًا من $199</p>
+                    <button class="btn btn-outline">اطلب الخدمة</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="service-title">كتب وموارد MEAL</h3>
+                    <p class="service-desc">مكتبة شاملة من الكتب الإلكترونية والأدلة العملية في مجال MEAL، محدثة باستمرار بأحدث الممارسات</p>
+                    <p class="service-price">بدءًا من $29</p>
+                    <button class="btn btn-outline">اطلب الخدمة</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="service-title">تحضير امتحانات MEAL-DPro</h3>
+                    <p class="service-desc">برنامج تدريبي مكثف لامتحانات MEAL-DPro مع نماذج اختبارات وحلول وتحليلات متقدمة للنجاح في الامتحان</p>
+                    <p class="service-price">بدءًا من $149</p>
+                    <button class="btn btn-outline">اطلب الخدمة</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3 class="service-title">كتابة السيرة الذاتية</h3>
+                    <p class="service-desc">كتابة سيرة ذاتية احترافية متوافقة مع نظام التوظيف العالمي (ATS) وحسب الوصف الوظيفي المطلوب</p>
+                    <p class="service-price">بدءًا من $79</p>
+                    <button class="btn btn-outline">اطلب الخدمة</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <h3 class="service-title">رسائل التغطية</h3>
+                    <p class="service-desc">كتابة رسائل تغطية احترافية مخصصة لكل وظيفة تتقدم لها، تبرز مؤهلاتك وخبراتك بشكل متميز</p>
+                    <p class="service-price">بدءًا من $49</p>
+                    <button class="btn btn-outline">اطلب الخدمة</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="service-title">مراجعة السيرة الذاتية</h3>
+                    <p class="service-desc">مراجعة شاملة للسيرة الذاتية ورسالة التغطية لضمان توافقها مع نظام التوظيف العالمي وتحسين فرص القبول</p>
+                    <p class="service-price">بدءًا من $39</p>
+                    <button class="btn btn-outline">اطلب الخدمة</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="courses" class="section">
+            <h2 class="section-title">الدورات التدريبية والشهادات</h2>
+            <div class="certificate-options">
+                <div class="certificate-option">
+                    <h3>دبلوم احترافي في MEAL</h3>
+                    <p>برنامج شامل يغطي جميع جوانب الرصد والتقييم والمساءلة والتعلم، مع مشاريع عملية وشهادة معتمدة دوليًا من قبل Irish Institute</p>
+                    <p class="certificate-price">$499</p>
+                    <button class="btn btn-primary">التفاصيل والتسجيل</button>
+                </div>
+                
+                <div class="certificate-option">
+                    <h3>شهادة مشاركة</h3>
+                    <p>شهادة رسمية تثبت مشاركتك في دوراتنا وورش العمل التدريبية، مشمولة مع جميع الدورات التدريبية</p>
+                    <p class="certificate-price">مشمولة مع الدورات</p>
+                    <button class="btn btn-primary">المزيد من المعلومات</button>
+                </div>
+                
+                <div class="certificate-option">
+                    <h3>شهادة إتمام</h3>
+                    <p>شهادة معتمدة تصدر بعد إتمام الاختبارات والمتطلبات بنجاح، تفتح لك فرص التوظيف في المنظمات الدولية</p>
+                    <p class="certificate-price">$49 (إضافة للدورة)</p>
+                    <button class="btn btn-primary">المزيد من المعلومات</button>
+                </div>
+            </div>
+            
+            <div class="services-grid" style="margin-top: 40px;">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="service-title">MEAL للمبتدئين</h3>
+                    <p class="service-desc">دورة شاملة تغطي أساسيات أنظمة MEAL، من المفاهيم الأساسية إلى التطبيق العملي في المشاريع التنموية</p>
+                    <p class="service-price">99$</p>
+                    <button class="btn btn-primary">سجل الآن</button>
+                </div>
+                
+                <div class="service-card">
+                    <span class="urgency-badge">مستعجل</span>
+                    <div class="service-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 class="service-title">إعداد امتحان MEAL-DPro</h3>
+                    <p class="service-desc">تحضير متقدم لامتحان MEAL-DPro مع نماذج اختبارات وحلول وتحليلات متقدمة للنجاح في الامتحان</p>
+                    <p class="service-price"><span class="original-price">$199</span> $149</p>
+                    <button class="btn btn-primary">سجل الآن</button>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title">تحليل البيانات بإحترافية</h3>
+                    <p class="service-desc">تعلم كيفية استخدام أدوات تحليل البيانات لاستخلاص رؤى قابلة للتنفيذ واتخاذ قرارات مبنية على الأدلة</p>
+                    <p class="service-price">$129</p>
+                    <button class="btn btn-primary">سجل الآن</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">من نحن</h2>
+            <div class="about-content">
+                <p style="text-align: center; font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">
+                    MEAL Pros هي منصة رائدة متخصصة في مجال الرصد والتقييم والمساءلة والتعلم (MEAL) للمشاريع التنموية والإنسانية. نحن فريق من الخبراء المعتمدين دوليًا، نقدم خدمات تدريبية واستشارية عالية الجودة تهدف إلى تمكين الأفراد والمنظمات من تحسين أداء مشاريعهم وتحقيق أهدافهم التنموية.
+                </p>
+                <p style="text-align: center; font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">
+                    تأسست MEAL Pros عام 2020 على يد د. صالح شبيل، خبير معتمد في MEAL يتمتع بخبرة تزيد عن 12 عامًا في تصميم أجهزة قياس الرصد والتقييم والمسوحات. منذ تأسيسها، تمكنت المنصة من تدريب أكثر من 5,000 محترف في هذا المجال وتقديم الاستشارات لأكثر من 200 منظمة دولية ومحلية.
+                </p>
+                <p style="text-align: center; font-size: 1.1rem; line-height: 1.8;">
+                    مهمتنا هي جعل مهارات MEAL في متناول الجميع، بغض النظر عن خلفيتهم الأكاديمية أو الجغرافية. نحن نؤمن بأن الجودة في تنفيذ المشاريع التنموية تعتمد على وجود أنظمة فعالة للرصد والتقييم والمساءلة والتعلم، ونسعى جاهدين لبناء مجتمع عالمي من المحترفين المؤهلين في هذا المجال.
+                </p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">فريق الخبراء لدينا</h2>
+            <div class="expert-team">
+                <div class="expert-card">
+                    <div class="expert-image">
+                        SS
+                    </div>
+                    <div class="expert-info">
+                        <h3 class="expert-name">د. صالح شبيل</h3>
+                        <p class="expert-role">خبير معتمد في MEAL</p>
+                        <p class="expert-bio">خبير معتمد في المتابعة والتقييم والمساءلة والتعلم، يتمتع بخبرة تزيد عن 12 سنة في تصميم أجهزة قياس الرصد والتقييم والمسوحات.</p>
+                        <div class="expert-contacts">
+                            <a href="https://www.linkedin.com/in/saleh-shubail-7a3905179" target="_blank" class="expert-contact"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:Saleh.shobail@gmail.com" class="expert-contact"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+967772570939" class="expert-contact"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="expert-card">
+                    <div class="expert-image">
+                        ZA
+                    </div>
+                    <div class="expert-info">
+                        <h3 class="expert-name">أ. زيد علي</h3>
+                        <p class="expert-role">خبير تحليل البيانات</p>
+                        <p class="expert-bio">خبير في التحليلات الإحصائية المتقدمة وذو رؤية تطبيقية لتنفيذ مشاريع البيانات وتحليلها بدقة عالية.</p>
+                        <div class="expert-contacts">
+                            <a href="https://www.linkedin.com/in/saleh-shubail-7a3905179" target="_blank" class="expert-contact"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:Saleh.shobail@gmail.com" class="expert-contact"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+967772570939" class="expert-contact"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="expert-card">
+                    <div class="expert-image">
+                        FA
+                    </div>
+                    <div class="expert-info">
+                        <h3 class="expert-name">أ. فايز علي</h3>
+                        <p class="expert-role">خبير تطوير المحتوى</p>
+                        <p class="expert-bio">من ذوي الخبرة في تطوير المحتوى التدريبي وإعداد الأدلة الفعالة في مجال الرصد والتقييم والمساءلة والتعلم.</p>
+                        <div class="expert-contacts">
+                            <a href="https://www.linkedin.com/in/saleh-shubail-7a3905179" target="_blank" class="expert-contact"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:Saleh.shobail@gmail.com" class="expert-contact"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+967772570939" class="expert-contact"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="expert-card">
+                    <div class="expert-image">
+                        DS
+                    </div>
+                    <div class="expert-info">
+                        <h3 class="expert-name">د. ضيف الله سالم</h3>
+                        <p class="expert-role">خبير الصحة والتغذية</p>
+                        <p class="expert-bio">متخصص وخبير في مجال الصحة والتغذية، مع خبرة واسعة في تصميم وتنفيذ برامج التغذية في السياقات الإنسانية.</p>
+                        <div class="expert-contacts">
+                            <a href="https://www.linkedin.com/in/saleh-shubail-7a3905179" target="_blank" class="expert-contact"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:Saleh.shobail@gmail.com" class="expert-contact"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+967772570939" class="expert-contact"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="resources" class="section">
+            <h2 class="section-title">الموارد والمكتبة</h2>
+            
+            <div class="resources-tabs">
+                <button class="resource-tab active" data-tab="news">النشرات والأخبار</button>
+                <button class="resource-tab" data-tab="free-books">الكتب المجانية</button>
+                <button class="resource-tab" data-tab="paid-books">الكتب المدفوعة</button>
+                <button class="resource-tab" data-tab="articles">المقالات</button>
+            </div>
+            
+            <div class="resource-content active" id="news-content">
+                <div class="news-grid">
+                    <div class="news-item">
+                        <div class="news-date"><i class="fas fa-calendar-alt"></i> 15 مايو 2024</div>
+                        <h3 class="news-title">فرص توظيف جديدة في منظمات دولية</h3>
+                        <p>تعلن عدة منظمات دولية عن فرص توظيف جديدة في مجال MEAL في عدة دول، مع رواتب تنافسية وظروف عمل ممتازة.</p>
+                        <button class="btn btn-outline">قراءة المزيد</button>
+                    </div>
+                    
+                    <div class="news-item">
+                        <div class="news-date"><i class="fas fa-calendar-alt"></i> 12 مايو 2024</div>
+                        <h3 class="news-title">ورشة عمل مجانية عن أساسيات MEAL</h3>
+                        <p>ندعوكم لحضور ورشة العمل المجانية التي ستعقد عبر الإنترنت يوم السبت القادم، مع خبراء دوليين في مجال الرصد والتقييم.</p>
+                        <button class="btn btn-outline">قراءة المزيد</button>
+                    </div>
+                    
+                    <div class="news-item">
+                        <div class="news-date"><i class="fas fa-calendar-alt"></i> 10 مايو 2024</div>
+                        <h3 class="news-title">إصدار دليل MEAL المحدث للإغاثة الطارئة</h3>
+                        <p>تم إصدار النسخة المحدثة من دليل MEAL الخاص بالإغاثة الطارئة في الكوارث، مع أحدث الممارسات والأساليب.</p>
+                        <button class="btn btn-outline">قراءة المزيد</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-content" id="free-books-content">
+                <div class="books-library">
+                    <div class="library-categories">
+                        <div class="library-category">
+                            <i class="fas fa-apple-alt"></i>
+                            <div>الأمن الغذائي وسبل العيش (FSL)</div>
+                        </div>
+                        <div class="library-category">
+                            <i class="fas fa-chart-network"></i>
+                            <div>MEAL Guidance</div>
+                        </div>
+                        <div class="library-category">
+                            <i class="fas fa-child"></i>
+                            <div>حماية الطفل (CP)</div>
+                        </div>
+                        <div class="library-category">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>التعليم (Education)</div>
+                        </div>
+                        <div class="library-category">
+                            <i class="fas fa-tint"></i>
+                            <div>WASH</div>
+                        </div>
+                        <div class="library-category">
+                            <i class="fas fa-heart"></i>
+                            <div>الصحة (Health)</div>
+                        </div>
+                        <div class="library-category">
+                            <i class="fas fa-home"></i>
+                            <div>الإيواء (Shelter)</div>
+                        </div>
+                        <div class="library-category">
+                            <i class="fas fa-truck"></i>
+                            <div>اللوجستيات (Logistics)</div>
+                        </div>
+                        <div class="library-category">
+                            <i class="fas fa-briefcase"></i>
+                            <div>الحماية (Protection)</div>
+                        </div>
+                        <div class="library-category">
+                            <i class="fas fa-globe"></i>
+                            <div>الاستجابة الطارئة (Emergency Response)</div>
+                        </div>
+                        <div class="library-category">
+                            <i class="fas fa-chart-line"></i>
+                            <div>التنمية المستدامة (Sustainable Development)</div>
+                        </div>
+                        <div class="library-category">
+                            <i class="fas fa-hands-helping"></i>
+                            <div>المساعدات الإنسانية (Humanitarian Aid)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="books-grid">
+                        <div class="book-item">
+                            <h3 class="book-title">دليل MEAL للمبتدئين</h3>
+                            <p>دليل شامل يشرح أساسيات أنظمة الرصد والتقييم للمشاريع التنموية والإنسانية.</p>
+                            <div class="book-categories">
+                                <span class="book-category">MEAL</span>
+                                <span class="book-category">مبتدئين</span>
+                            </div>
+                            <button class="book-download">
+                                <i class="fas fa-download"></i> تحميل مجاني
+                            </button>
+                        </div>
+                        
+                        <div class="book-item">
+                            <h3 class="book-title">نماذج تقارير التقييم</h3>
+                            <p>مجموعة من النماذج الجاهزة لتقارير التقييم لمختلف أنواع المشاريع والقطاعات الإنسانية.</p>
+                            <div class="book-categories">
+                                <span class="book-category">تقارير</span>
+                                <span class="book-category">نماذج</span>
+                            </div>
+                            <button class="book-download">
+                                <i class="fas fa-download"></i> تحميل مجاني
+                            </button>
+                        </div>
+                        
+                        <div class="book-item">
+                            <h3 class="book-title">أدوات جمع البيانات</h3>
+                            <p>دليل عملي لأدوات جمع البيانات واستمارات التقييم المختلفة المستخدمة في الميدان.</p>
+                            <div class="book-categories">
+                                <span class="book-category">بيانات</span>
+                                <span class="book-category">مسوحات</span>
+                            </div>
+                            <button class="book-download">
+                                <i class="fas fa-download"></i> تحميل مجاني
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-content" id="paid-books-content">
+                <div class="books-library">
+                    <div class="books-grid">
+                        <div class="book-item">
+                            <h3 class="book-title">الإطار المنطقي المتقدم</h3>
+                            <p>دليل متقدم لبناء الإطارات المنطقية للمشاريع المعقدة، مع أمثلة عملية من السياقات المختلفة.</p>
+                            <div class="book-categories">
+                                <span class="book-category">تخطيط</span>
+                                <span class="book-category">مشاريع</span>
+                            </div>
+                            <p class="book-price">$29</p>
+                            <button class="btn btn-primary">شراء الآن</button>
+                        </div>
+                        
+                        <div class="book-item">
+                            <h3 class="book-title">تحليل البيانات بإحترافية</h3>
+                            <p>كتاب متخصص في تحليل بيانات المشاريع باستخدام برامج التحليل الإحصائي وأدوات التصور الحديثة.</p>
+                            <div class="book-categories">
+                                <span class="book-category">تحليل</span>
+                                <span class="book-category">بيانات</span>
+                            </div>
+                            <p class="book-price">$35</p>
+                            <button class="btn btn-primary">شراء الآن</button>
+                        </div>
+                        
+                        <div class="book-item">
+                            <h3 class="book-title">إعداد مقترحات المشاريع</h3>
+                            <p>دليل عملي لإعداد مقترحات المشاريع التنموية بطريقة احترافية تزيد من فرص الحصول على التمويل.</p>
+                            <div class="book-categories">
+                                <span class="book-category">تمويل</span>
+                                <span class="book-category">مقترحات</span>
+                            </div>
+                            <p class="book-price">$42</p>
+                            <button class="btn btn-primary">شراء الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resource-content" id="articles-content">
+                <div class="news-grid">
+                    <div class="news-item">
+                        <div class="news-date"><i class="fas fa-calendar-alt"></i> 8 مايو 2024</div>
+                        <h3 class="news-title">أهمية المساءلة في المشاريع الإنسانية</h3>
+                        <p>مقال يتناول دور المساءلة في تعزيز فعالية المشاريع الإنسانية وبناء الثقة مع المجتمعات المستفيدة.</p>
+                        <button class="btn btn-outline">قراءة المزيد</button>
+                    </div>
+                    
+                    <div class="news-item">
+                        <div class="news-date"><i class="fas fa-calendar-alt"></i> 5 مايو 2024</div>
+                        <h3 class="news-title">أفضل ممارسات التعلم المؤسسي</h3>
+                        <p>كيف يمكن للمنظمات استخلاص الدروس المستفادة وتطبيقها لتحسين أداء المشاريع المستقبلية.</p>
+                        <button class="btn btn-outline">قراءة المزيد</button>
+                    </div>
+                    
+                    <div class="news-item">
+                        <div class="news-date"><i class="fas fa-calendar-alt"></i> 3 مايو 2024</div>
+                        <h3 class="news-title">تحديات الرصد في المناطق النائية</h3>
+                        <p>استراتيجيات مبتكرة للتغلب على تحديات الرصد والتقييم في المناطق ذات الوصول المحدود.</p>
+                        <button class="btn btn-outline">قراءة المزيد</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2 class="section-title">آراء عملائنا</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">"استفدت كثيرًا من دورة إعداد امتحان MEAL-DPro، ونجحت في اجتياز الامتحان من أول مرة. المنهج العلمي والتحضير الكبير جعل الفرق كبيرًا."</p>
+                    <p class="testimonial-author">- عبدالعزيز صالح</p>
+                    <p class="testimonial-position">محلل بيانات، منظمة دولية</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"التقارير التي أعدها فريق MEAL Pros ساعدتنا في الحصول على تمويل لمشروعنا القادم، فريق محترف بمعنى الكلمة."</p>
+                    <p class="testimonial-author">- ضيف الله سالم</p>
+                    <p class="testimonial-position">مدير برنامج، منظمة تعاون</p>
+                </div>
+                
+                <div class="testimonial">
+                    <p class="testimonial-text">"دورة MEAL للمبتدئين لم تكن مجرد مسار تدريبي، بل كانت تحولًا مهنيًا كاملًا، وأصبحت الآن قادرًا على تطبيق نظام MEAL في مشاريعنا بدقة عالية."</p>
+                    <p class="testimonial-author">- د. جابر علي</p>
+                    <p class="testimonial-position">مدير مشاريع، مؤسسة خيرية</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2 class="section-title">تواصل معنا</h2>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل <span class="required">*</span></label>
+                    <input type="text" id="name" placeholder="أدخل اسمك الكامل" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني <span class="required">*</span></label>
+                    <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">رقم الهاتف <span class="required">*</span></label>
+                    <div class="country-selector">
+                        <select id="countryCode" class="country-code" required>
+                            <option value="">اختر</option>
+                            <option value="+966">السعودية +966</option>
+                            <option value="+20">مصر +20</option>
+                            <option value="+971">الإمارات +971</option>
+                            <option value="+965">الكويت +965</option>
+                            <option value="+974">قطر +974</option>
+                            <option value="+973">البحرين +973</option>
+                            <option value="+968">عمان +968</option>
+                            <option value="+967">اليمن +967</option>
+                            <option value="+962">الأردن +962</option>
+                            <option value="+961">لبنان +961</option>
+                            <option value="+212">المغرب +212</option>
+                            <option value="+213">الجزائر +213</option>
+                            <option value="+216">تونس +216</option>
+                            <option value="+963">سوريا +963</option>
+                            <option value="+964">العراق +964</option>
+                            <option value="+972">فلسطين +972</option>
+                            <option value="+970">فلسطين +970</option>
+                            <option value="+249">السودان +249</option>
+                            <option value="+252">الصومال +252</option>
+                            <option value="+218">ليبيا +218</option>
+                            <option value="+211">جنوب السودان +211</option>
+                            <option value="+251">إثيوبيا +251</option>
+                            <option value="+250">رواندا +250</option>
+                            <option value="+256">أوغندا +256</option>
+                            <option value="+255">تنزانيا +255</option>
+                            <option value="+254">كينيا +254</option>
+                            <option value="+253">جيبوتي +253</option>
+                            <option value="+243">الكونغو +243</option>
+                            <option value="+242">الكونغو +242</option>
+                            <option value="+241">الغابون +241</option>
+                            <option value="+234">نيجيريا +234</option>
+                            <option value="+233">غانا +233</option>
+                            <option value="+225">ساحل العاج +225</option>
+                            <option value="+224">غينيا +224</option>
+                            <option value="+223">مالي +223</option>
+                            <option value="+222">موريتانيا +222</option>
+                            <option value="+221">السنغال +221</option>
+                            <option value="+220">غامبيا +220</option>
+                            <option value="+260">زامبيا +260</option>
+                            <option value="+263">زيمبابوي +263</option>
+                            <option value="+264">ناميبيا +264</option>
+                            <option value="+265">ملاوي +265</option>
+                            <option value="+266">ليسوتو +266</option>
+                            <option value="+267">بوتسوانا +267</option>
+                            <option value="+268">إسواتيني +268</option>
+                            <option value="+269">جزر القمر +269</option>
+                            <option value="+27">جنوب أفريقيا +27</option>
+                            <option value="+90">تركيا +90</option>
+                            <option value="+44">المملكة المتحدة +44</option>
+                            <option value="+49">ألمانيا +49</option>
+                            <option value="+33">فرنسا +33</option>
+                            <option value="+1">الولايات المتحدة +1</option>
+                            <option value="+1">كندا +1</option>
+                            <option value="+52">المكسيك +52</option>
+                            <option value="+55">البرازيل +55</option>
+                            <option value="+61">أستراليا +61</option>
+                            <option value="+64">نيوزيلندا +64</option>
+                            <option value="+86">الصين +86</option>
+                            <option value="+81">اليابان +81</option>
+                            <option value="+82">كوريا الجنوبية +82</option>
+                            <option value="+7">روسيا +7</option>
+                            </select>
+                        <input type="tel" id="phone" class="country-phone" placeholder="أدخل رقم هاتفك" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="serviceType">نوع الخدمة <span class="required">*</span></label>
+                    <select id="serviceType" required>
+                        <option value="">اختر الخدمة المطلوبة</option>
+                        <option value="training">تدريب ودورات</option>
+                        <option value="consultation">استشارة</option>
+                        <option value="reporting">كتابة تقارير</option>
+                        <option value="surveys">إجراء مسوحات</option>
+                        <option value="analysis">تحليلات إحصائية</option>
+                        <option value="books">كتب وموارد</option>
+                        <option value="exams">حل امتحانات</option>
+                        <option value="cv">كتابة السيرة الذاتية</option>
+                        <option value="cover-letter">رسائل التغطية</option>
+                        <option value="cv-review">مراجعة السيرة الذاتية</option>
+                        <option value="other">أخرى</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="urgency">الأولوية</label>
+                    <select id="urgency">
+                        <option value="normal">عادية</option>
+                        <option value="urgent">مستعجل</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">الميزانية المتوقعة ($)</label>
+                    <input type="number" id="budget" placeholder="الميزانية المتوقعة للخدمة">
+                </div>
+                
+                <div class="form-group">
+                    <label>طريقة الدفع المفضلة</label>
+                    <div class="payment-options">
+                        <label class="payment-option" onclick="selectPayment(this)">
+                            <input type="radio" name="payment" value="paypal">
+                            <i class="fab fa-paypal paypal"></i> Paypal
+                        </label>
+                        <label class="payment-option" onclick="selectPayment(this)">
+                            <input type="radio" name="payment" value="visa">
+                            <i class="fas fa-credit-card visa"></i> Visa
+                        </label>
+                        <label class="payment-option" onclick="selectPayment(this)">
+                            <input type="radio" name="payment" value="bank">
+                            <i class="fas fa-university bank"></i> تحويل بنكي
+                        </label>
+                        <label class="payment-option" onclick="selectPayment(this)">
+                            <input type="radio" name="payment" value="wallet">
+                            <i class="fas fa-wallet wallet"></i> محفظة إلكترونية
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">الرسالة <span class="required">*</span></label>
+                    <textarea id="message" placeholder="أدخل رسالتك هنا..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> إرسال الطلب
+                </button>
+            </form>
+        </section>
+        
+        <footer>
+            <div class="social-links">
+                <a href="https://t.me/MEALTeam0" target="_blank" title="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/saleh-shubail-7a3905179" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.linkedin.com/groups/9557333" target="_blank" title="LinkedIn Group">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/KHUYktIfzsSHwzQtfySDR2" target="_blank" title="WhatsApp Group 1">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/LGwaC5XgA9w1DNji1THZkt" target="_blank" title="WhatsApp Group 2">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://chat.whatsapp.com/LlMuwifF8LjF1CaoGsx6lh" target="_blank" title="WhatsApp Group 3">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.youtube.com/@MEALCertifiedInternational" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="mailto:Saleh.shobail@gmail.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>© 2024 MEAL Pros | جميع الحقوق محفوظة</p>
+            <p style="margin-top: 10px; font-size: 0.9rem">الخبراء في أنظمة الرصد والتقييم والمساءلة والتعلم</p>
+            <p style="margin-top: 5px; font-size: 0.8rem">هاتف: +967772570939 | بريد إلكتروني: Saleh.shobail@gmail.com</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
